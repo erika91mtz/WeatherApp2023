@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(
+    250deg,
+    rgb(255, 241, 165) 1.9%,
+    rgb(200, 125, 76) 49.7%,
+    rgb(83, 54, 54) 100.5%
+  );
+}
+h3 {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  grid-template-rows: auto;
+}
+.row,
+.col {
+  border: 1px solid black;
+}
+.todaysDetails {
+  text-align: center;
+  font-size: 19px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.details {
+  text-align: center;
+  font-size: 19px;
+}
+.fri,
+.sat,
+.sun,
+.mon,
+.tue {
+  text-align: center;
+}
+.description,
+.friday,
+.saturday,
+.sunday,
+.monday,
+.tuesday {
+  font-size: 20px;
+}
