@@ -50,5 +50,6 @@ form {
   font-size: 20px;
 }
 .open-source {
-  font-size: 100px;
+  display: block;
+  margin: 0 auto;
 }
