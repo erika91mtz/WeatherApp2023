@@ -12,6 +12,9 @@ h3 {
 form {
   text-align: center;
 }
+a {
+  color: green;
+}
 
 .container {
   display: block;
@@ -48,7 +51,4 @@ form {
 .monday,
 .tuesday {
   font-size: 20px;
-}
-.open-source {
-  text-align: center;
 }
