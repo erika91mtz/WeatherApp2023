@@ -49,6 +49,10 @@ form {
 .tuesday {
   font-size: 20px;
 }
-.open-source {
+.openSource {
+  display: block;
+  margin: 0 auto;
+}
+.codedBy {
   text-align: center;
 }
