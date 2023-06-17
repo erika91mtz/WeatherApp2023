@@ -18,6 +18,7 @@ form {
   margin: 0 auto;
   border: 1px solid black;
   grid-template-rows: auto;
+  color: black;
 }
 .row,
 .col {
