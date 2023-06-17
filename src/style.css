@@ -55,4 +55,6 @@ form {
 }
 .gitHubLink {
   font-size: 45px;
+  display: block;
+  margin: 0 auto;
 }
