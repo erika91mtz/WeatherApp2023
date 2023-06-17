@@ -32,9 +32,9 @@ function displayForecast() {
   <div class="row> 
   <div class="col-2">
   <div class="weather-forecast-date">Thu</div>
-  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+  <img src="http://openweathermap.org/img/wn/50d@2x.png"
           alt=""
-          width="42"
+          width="36"
         />
   <div class="weather-forecast-temperatures">
   <span class="weather-forecast-temperature-max">18</span>
