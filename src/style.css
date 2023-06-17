@@ -50,11 +50,9 @@ form {
   font-size: 20px;
 }
 .coderName {
-  color: aquamarine;
+  color: blueviolet;
   text-align: center;
 }
 .gitHubLink {
   font-size: 21px;
-  display: block;
-  margin: 0 auto;
 }
