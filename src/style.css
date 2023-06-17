@@ -53,7 +53,13 @@ form {
 .gitHubLink {
   font-size: 14px;
 }
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
+.weather-forecast-date {
+  font-size: 20px;
+  color: black;
+}
+.weather-forecast-temperatures {
+  font-size: 42px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
