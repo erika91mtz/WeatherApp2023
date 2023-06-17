@@ -28,10 +28,13 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = `
+  let forecastHTML = "Hello";
+  forecastElement.innerHTML =
+    forecastHTML +
+    `
              <div class="row">
               <div class="col-2">
-                <div class="weather-forecast-date">Friday</div>
+                <div class="weather-forecast-date">Sunday</div>
                 <img
                   src="http://openweathermap.org/img/wn/50d@2x.png"
                   alt=""
