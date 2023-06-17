@@ -26,6 +26,11 @@ let dateElement = document.querySelector("#time-now");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = "Forecast";
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#location").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
