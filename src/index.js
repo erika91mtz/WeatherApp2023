@@ -65,6 +65,7 @@ function displayWeatherCondition(response) {
     response.data.weather[0].main;
 }
 function getForecast(coordinates) {
+  console.log(coordinates);
   let apiKey = "a95c2c6739994ba4903e007ee817e7d1";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   console.log(apiUrl);
