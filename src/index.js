@@ -29,7 +29,7 @@ dateElement.innerHTML = formatDate(currentTime);
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  forecastHTML.innerHTML =
+  forecastHTML =
     forecastHTML +
     `
              <div class="row">
@@ -46,7 +46,7 @@ function displayForecast() {
                 </div>
               </div>
             </div>`;
-  forecastHTML.innerHTML =
+  forecastHTML =
     forecastHTML +
     `
              <div class="row">
