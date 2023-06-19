@@ -17,13 +17,13 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="search">
+        <div class="search-form">
           <form id="location-form">
             <div class="row">
               <div class="col-6">
                 <input
                   class="form-control btn btn-light"
-                  type="text"
+                  type="search"
                   autocomplete="off"
                   placeholder="Search City"
                   id="city-input"
@@ -33,7 +33,7 @@
                 <input
                   class="btn btn-dark w-100"
                   type="submit"
-                  value="Submit"
+                  value="Search"
                 />
               </div>
               <div class="col-3">
@@ -43,27 +43,31 @@
               </div>
             </div>
           </form>
-          <h3>
-            <div id="location"></div>
-            <div id="time-now"></div>
-            <span class="temperature" id="temperature"></span>
-            <span class="units">
-              <a href="a" id="fahrenheit-link">℉</a> |
-              <a href="a" id="celsius-link">℃</a>
-            </span>
-            <div>
-              <span class="emojiSun"></span>
-              ☀
-              <span class="description" id="description"></span>
-            </div>
-          </h3>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+
+          <div id="location"></div>
+          <div id="time-now"></div>
+          <span class="temperature" id="temperature"></span>
+          <span class="units">
+            <a href="a" id="fahrenheit-link">℉</a> |
+            <a href="a" id="celsius-link">℃</a>
+          </span>
+          <div>
+            <span class="emojiSun"></span>
+            ☀
+            <span class="description" id="description"></span>
+          </div>
 
           <div class="row">
             <div class="col today">
               <div class="todaysDetails">Todays Details</div>
               <p class="details">
-                Precipitation: 20%
-                <br />
                 Wind: <span id="wind"></span>km/h
                 <br />
                 Humidity: <span id="humidity"></span>%
