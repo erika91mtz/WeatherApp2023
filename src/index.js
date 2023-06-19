@@ -64,6 +64,11 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
+function getForecast(coordinates) {
+  let apiKey = "a95c2c6739994ba4903e007ee817e7d1";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  console.log(apiUrl);
+}
 
 function searchCity(city) {
   let apiKey = "6d68aadfacdd4f5163bc273049a0cf2d";
