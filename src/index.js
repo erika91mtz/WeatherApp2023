@@ -98,6 +98,17 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 
+function searchLocation(position) {
+  let apiKey = "6d68aadfacdd4f5163bc273049a0cf2d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function searchCity(city) {
   let apiKey = "5aac6d0188c6f17d6d2bbe6591b6fef0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
