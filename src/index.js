@@ -51,9 +51,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-let form = document.querySelector("#location-form");
-form.addEventListener("submit", handleSubmit);
-
 function convertToC(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
@@ -87,5 +84,8 @@ FahrenheitLink.addEventListener("click", convertToF);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let form = document.querySelector("#location-form");
+form.addEventListener("submit", handleSubmit);
 
 searchCity("Denver");
