@@ -115,6 +115,9 @@ function searchCity(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#search-city-input").value;
