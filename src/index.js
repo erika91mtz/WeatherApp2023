@@ -147,8 +147,6 @@ function convertToC(event) {
   temperature = Number(temperature);
   tempElement.innerHTML = Math.round(((temperature - 32) * 5) / 9);
 }
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToC);
 
 function convertToF(event) {
   event.preventDefault();
