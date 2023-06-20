@@ -140,22 +140,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#location-form");
 form.addEventListener("submit", handleSubmit);
 
-function convertToC(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temperature");
-  let temperature = tempElement.innerHTML;
-  temperature = Number(temperature);
-  tempElement.innerHTML = Math.round(((temperature - 32) * 5) / 9);
-}
-
-function convertToF(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temperature");
-  let temperature = tempElement.innerHTML;
-  temperature = Number(temperature);
-  tempElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
-}
-let FahrenheitLink = document.querySelector("#fahrenheit-link");
-FahrenheitLink.addEventListener("click", convertToF);
-
 searchCity("Denver");
