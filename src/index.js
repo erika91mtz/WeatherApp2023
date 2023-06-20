@@ -97,6 +97,18 @@ function displayTemperature(response) {
 
   getForecast(response.data.coord);
 }
+function displayWeatherCondition(response) {
+  document.querySelector("#location").innerHTML = response.data.name;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+}
 
 function searchLocation(position) {
   let apiKey = "5aac6d0188c6f17d6d2bbe6591b6fef0";
@@ -136,6 +148,7 @@ function convertToC(event) {
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToC);
+
 function convertToF(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temperature");
