@@ -98,7 +98,7 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 function displayWeatherCondition(response) {
-  document.querySelector("#location").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
