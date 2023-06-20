@@ -24,6 +24,11 @@ form {
 .col {
   border: 1px solid black;
 }
+.showToday {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+}
 .todaysDetails {
   text-align: center;
   font-size: 19px;
