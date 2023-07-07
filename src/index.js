@@ -98,6 +98,7 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+  console.log(response.data);
 }
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
